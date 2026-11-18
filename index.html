@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>나무 다섯 그루</title>
+<meta name="description" content="대구 북구 검단동의 지금 날씨에 따라 색이 바뀌는 다섯 나무 이야기: 목련, 벚나무, 배롱나무, 향나무, 소나무">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌳%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--base:#FCE08A;--alt:#FDF6EF;--accent:#E01F1F;--text:#2a1d12}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:"Noto Sans KR",system-ui,sans-serif;color:var(--text);background:var(--alt);line-height:1.8;word-break:keep-all}
+
+/* 첫 화면 */
+.hero{background:var(--base);padding:56px 6vw 64px}
+.hero h1{margin:0;font-weight:900;color:var(--accent);font-size:clamp(56px,11vw,140px);line-height:1.05;letter-spacing:-.04em}
+.hero p{margin:14px 0 0;max-width:34em;font-size:clamp(15px,1.7vw,19px)}
+
+/* 나무 목록 */
+.list{list-style:none;margin:0;padding:0}
+.list a{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:baseline;gap:4px 4vw;
+  padding:28px 6vw;color:inherit;text-decoration:none;transition:background-color .25s,color .25s}
+.list li:nth-child(odd) a{background:var(--alt)}
+.list li:nth-child(even) a{background:var(--base)}
+.tree{font-weight:900;color:var(--accent);font-size:clamp(36px,6vw,72px);line-height:1.15;letter-spacing:-.03em;transition:color .25s}
+.tag{font-size:clamp(15px,1.8vw,20px)}
+.list a:hover,.list a:focus-visible{background:var(--text)}
+.list a:hover .tree,.list a:focus-visible .tree{color:var(--base)}
+.list a:hover .tag,.list a:focus-visible .tag{color:var(--alt)}
+.list a:focus-visible{outline:4px solid var(--accent);outline-offset:-8px}
+
+/* 맨 아래 */
+footer{background:var(--text);color:var(--base);padding:28px 6vw;font-size:14px}
+footer p{margin:0}
+
+@media (max-width:640px){
+  .hero{padding:40px 6vw 48px}
+  .list a{grid-template-columns:1fr;padding:24px 6vw}
+}
+@media (prefers-reduced-motion:reduce){
+  .list a,.tree{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>나무 다섯 그루</h1>
+  <p>대구 북구 검단동의 지금 날씨에 따라 색이 바뀌는 나무 이야기예요. 보고 싶은 나무를 골라 보세요.</p>
+</header>
+
+<main>
+  <ul class="list">
+    <li><a href="magnolia.html"><span class="tree">목련</span><span class="tag">이른 봄, 하얀 등불을 켜는 나무</span></a></li>
+    <li><a href="cherry.html"><span class="tree">벚나무</span><span class="tag">봄을 가장 화사하게 여는 나무</span></a></li>
+    <li><a href="crape-myrtle.html"><span class="tree">배롱나무</span><span class="tag">백일 동안 붉게 피어나는 여름의 꽃</span></a></li>
+    <li><a href="juniper.html"><span class="tree">향나무</span><span class="tag">향기로 마음을 맑히던 나무</span></a></li>
+    <li><a href="pine.html"><span class="tree">소나무</span><span class="tag">사계절 내내 푸른 우리 산의 주인</span></a></li>
+  </ul>
+</main>
+
+<footer>
+  <p>대구 북구 검단동</p>
+</footer>
+
+</body>
+</html>
